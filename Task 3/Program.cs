@@ -13,13 +13,12 @@ namespace Task_3
         {
             Console.WriteLine("Task 3...");
             float P = float.Parse(Console.ReadLine().ToString().Replace(".", ","));
-            float m = 1000;
-            float mP = ((m * P) / 100);
+            float m = 1000.0f;
             int counter = 0;
             float i = 0;
             if(P > 0 && P < 25)
             {
-                for(i = m; i <= 1100; i+=mP)
+                for(i = m; i <= 1100.0f; i+=i*P/100)
                 {
                     counter++;
                 }
